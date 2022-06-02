@@ -1,0 +1,77 @@
+<div class="container">
+  <section>
+    <form>
+      <span>
+        <input
+          (input)="
+            inputHandler(
+              $event,
+              primaryInput,
+              primarySelect,
+              secondaryInput,
+              secondarySelect
+            )
+          "
+          type="number"
+          name="primary"
+          #primaryInput
+        />
+        <label for="primary">
+          <select
+            (input)="
+              selectHandler(
+                $event,
+                primaryInput,
+                primarySelect,
+                secondaryInput,
+                secondarySelect
+              )
+            "
+            #primarySelect
+            name="primary"
+          >
+            <option value="978">EU</option>
+            <option value="840" selected>USD</option>
+            <option value="980">UA</option>
+          </select>
+        </label>
+      </span>
+
+      <span>
+        <input
+          (input)="
+            inputHandler(
+              $event,
+              primaryInput,
+              primarySelect,
+              secondaryInput,
+              secondarySelect
+            )
+          "
+          type="number"
+          name="secondary"
+          #secondaryInput
+        />
+        <label for="secondary">
+          <select
+            (input)="
+              selectHandler(
+                $event,
+                primaryInput,
+                primarySelect,
+                secondaryInput,
+                secondarySelect
+              )
+            "
+            #secondarySelect
+            name="secondary"
+          >
+            <option value="980" selected>UA</option>
+            <option value="840">USD</option>
+            <option value="978">EU</option>
+          </select>
+        </label>
+      </span>
+    </form>
+  </section>
+</div>

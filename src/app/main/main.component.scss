@@ -1,0 +1,40 @@
+.container {
+  margin-top: 50px;
+  margin-left: 50px;
+  section {
+    width: 400px;
+    margin: 0 auto;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      span {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-content: center;
+        input {
+          width: 100px;
+          height: 50px;
+          font-size: larger;
+          padding-left: 10px;
+        }
+        label,
+        select {
+          height: 56px;
+        }
+        select {
+          user-select: none;
+          border: none;
+          outline: none;
+          padding: 0 10px;
+
+          > option {
+            padding: 10px 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
